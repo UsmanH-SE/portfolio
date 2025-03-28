@@ -40,7 +40,7 @@
 // firstelement.style.color = "red";
 // firstelement.style.backgroundColor="pink";
 
-let parent= document.querySelector(".parent");
+// let parent= document.querySelector(".parent");
 // console.log(parent);
 //  console.log(parent.children[1].innertext);
 //  console.log(parent.children[3].outerHTML)
@@ -55,16 +55,29 @@ let parent= document.querySelector(".parent");
 //  console.log(dayone);
 //  console.log(dayone.parentElement)
 //  console.log(dayone.nextElementSibling)
-console.log(parent.childNodes);
-let div = document.createElement("div")
-console.log(div)
-div.className= ("pilot")
-div.id = (Math.random()*10 + 1)
-div.setAttribute("district", "attock")
+// console.log(parent.childNodes);
+// let div = document.createElement("div")
+// console.log(div)
+// div.className= ("pilot")
+// div.id = (Math.random()*10 + 1)
+// div.setAttribute("district", "attock")
 
-let create = document.createTextNode("Wellcome pilot usman")
-div.append(create)
- document.body.appendChild(div)
+// let create = document.createTextNode("Wellcome pilot usman")
+// div.append(create)
+//  document.body.appendChild(div)
 
+//   document.getElementById('man').addEventListener('click',function(e){
+//     console.log(e);
+    
+//   }) 
+  
  
- 
+//type, timestamp, defaultprevented, target, src element,Current target,toElement
+//clientX, clientY, screenX, screenY,
+//altkey, shiftkey, ctrlkey, keycode,
+
+document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.parentNode);
+    let removeIt=e.target.parentNode;
+    removeIt.remove()
+})

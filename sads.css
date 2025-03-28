@@ -1,14 +1,3 @@
-.pilot{
-    height: 65vh;
-    width: 55vw;
-    background-color: blue; 
-}
-.child1{
-    background-color: beige;
-}
-.child2{
-    background-color: yellowgreen;
-}
-.child3{
-    background-color: red;
+ul>li{
+    list-style-type: none;
 }
